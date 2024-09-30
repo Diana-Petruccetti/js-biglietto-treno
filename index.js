@@ -26,7 +26,7 @@ let message;
 
 // Seconda fase: Raccogliamo i dati
 // Utilizzo un prompt per salvare le parole
-age = prompt('Inserisci la tua età');
-km = prompt('Inserisci quanti chilometri devi percorrere');
+age = Number(prompt('Inserisci la tua età'));
+km = Number(prompt('Inserisci quanti chilometri devi percorrere'));
 
 console.log(age, km);
