@@ -19,4 +19,14 @@ console.log('Ciao')
 
 // Prima fase: Preparazione
 // Creo le variabili
+let age;
+let km;
+// Creo la variabile dove salvare il messaggio finale
+let message;
 
+// Seconda fase: Raccogliamo i dati
+// Utilizzo un prompt per salvare le parole
+age = prompt('Inserisci la tua età');
+km = prompt('Inserisci quanti chilometri devi percorrere');
+
+console.log(age, km);
