@@ -18,15 +18,38 @@ console.log('Ciao')
 // Dare un prezzo in base alle risposte
 
 // Prima fase: Preparazione
-// Creo le variabili
+// Creo variabile età utente
 let age;
+// Creo variabile km percorsi
 let km;
+// Creo variabile con prezzo al chilometro
+let price_km;
+// Creo variabile con prezzo totale
+let total_price;
 // Creo la variabile dove salvare il messaggio finale
 let message;
 
-// Seconda fase: Raccogliamo i dati
-// Utilizzo un prompt per salvare le parole
-age = Number(prompt('Inserisci la tua età'));
-km = Number(prompt('Inserisci quanti chilometri devi percorrere'));
+// Seconda fase: Raccolta dati
+// Assegno alle variabili il risultato del prompt
+age = Number(window.prompt('Inserisci la tua età'));
+km = Number(window.prompt('Inserisci quanti chilometri vuoi percorrere'));
+// Assegno valore prezzo al km
+price_km = 0.21
+// Stampo le variabili con i dati raccolti
+console.log(age, km, price_km);
 
-console.log(age, km);
+// Terza fase: Elaborazione
+// Calcolo biglietto senza sconti
+total_price = km * price_km;
+console.log(total_price);
+// Se l'età dell'utente è minore di 18 allora applico lo sconto del 20%
+if(age < 18) {
+    // Calcolare sconto del 20% sul prezzo totale
+    // Aggiorno la variabile 'message' con un messaggio appropriato
+}
+// Se l'età dell'utente è maggiore di 65 applico lo sconto del 40%
+else if(age > 65) {
+    // Calcolare sconto del 20% sul prezzo totale
+    // Aggiorno la variabile 'message' con un messaggio appropriato
+}
+// Altrimenti il prezzo è pieno
