@@ -43,23 +43,31 @@ console.log(age, km, price_km);
 total_price = km * price_km;
 console.log(total_price);
 // Se l'età dell'utente è minore di 18 allora applico lo sconto del 20%
-if(age < 18) {
+if (age < 18) {
     // Calcolare sconto del 20% sul prezzo totale
     const discount = total_price * 0.2;
     console.log(discount);
     //Applico lo sconto al prezzo finale
-    total_price = total_price - discount;
+    total_price -= discount;
+
     // Aggiorno la variabile 'message' con un messaggio appropriato
-    message = `Ciao, il costo del tuo biglietto è: ${total_price.toFixed(2)} - Applicato sconto del 20%`;
+    message = `Ciao, il costo del tuo biglietto è: €${total_price.toFixed(2)} - Applicato sconto del 20%`;
+    console.log(message);
 }
 // Se l'età dell'utente è maggiore di 65 applico lo sconto del 40%
-else if(age > 65) {
+else if (age > 65) {
     // Calcolare sconto del 20% sul prezzo totale
     const discount = total_price * 0.4;
     console.log(discount);
     // Applico lo sconto al prezzo finale
-    total_price = total_price - discount;
+    total_price -= discount;
     // Aggiorno la variabile 'message' con un messaggio appropriato
-    message = `Ciao, il costo del tuo biglietto è: ${total_price.toFixed(2)} - Applicato sconto del 40%`;
+    message = `Ciao, il costo del tuo biglietto è: €${total_price.toFixed(2)} - Applicato sconto del 40%`;
+    console.log(message);
 }
 // Altrimenti il prezzo è pieno
+else {
+    // Aggiorno la variabile 'message' con un messaggio appropriato
+    message = `Ciao, il costo del tuo biglietto è: €${total_price.toFixed(2)}`;
+    console.log(message);
+}
