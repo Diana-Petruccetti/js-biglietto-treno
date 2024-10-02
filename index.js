@@ -52,6 +52,7 @@ if (age < 18) {
 
     // Aggiorno la variabile 'message' con un messaggio appropriato
     message = `Ciao, il costo del tuo biglietto è: €${total_price.toFixed(2)} - Applicato sconto del 20%`;
+    window.alert(message);
     console.log(message);
 }
 // Se l'età dell'utente è maggiore di 65 applico lo sconto del 40%
@@ -63,11 +64,13 @@ else if (age > 65) {
     total_price -= discount;
     // Aggiorno la variabile 'message' con un messaggio appropriato
     message = `Ciao, il costo del tuo biglietto è: €${total_price.toFixed(2)} - Applicato sconto del 40%`;
+    window.alert(message);
     console.log(message);
 }
 // Altrimenti il prezzo è pieno
 else {
     // Aggiorno la variabile 'message' con un messaggio appropriato
     message = `Ciao, il costo del tuo biglietto è: €${total_price.toFixed(2)}`;
+    window.alert(message);
     console.log(message);
 }
